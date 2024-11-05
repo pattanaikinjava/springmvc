@@ -1,0 +1,13 @@
+package com.mvc.model.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ModelController {
+	
+	@GetMapping("/home")
+	public String getUserHome() {
+		return "UserHome";
+	}
+}
